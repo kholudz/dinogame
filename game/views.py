@@ -5,3 +5,8 @@ from django.http import HttpResponse
 def home(request):
     return render(request,'game/homePage.html')
 
+
+def td(request):
+    return render(request,'game/TD.html')
+
+
