@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Game Website</title>
+    <style>
+        body {
+            /* Background color with opacity */
+            background-color: #e5e5f7;
+            opacity: 0.8;
+            /* Background gradients */
+            background-image:  linear-gradient(30deg, #cecfe4 12%, transparent 12.5%, transparent 87%, #cecfe4 87.5%, #cecfe4), 
+                                linear-gradient(150deg, #cecfe4 12%, transparent 12.5%, transparent 87%, #cecfe4 87.5%, #cecfe4), 
+                                linear-gradient(30deg, #cecfe4 12%, transparent 12.5%, transparent 87%, #cecfe4 87.5%, #cecfe4), 
+                                linear-gradient(150deg, #cecfe4 12%, transparent 12.5%, transparent 87%, #cecfe4 87.5%, #cecfe4), 
+                                linear-gradient(60deg, #cecfe477 25%, transparent 25.5%, transparent 75%, #cecfe477 75%, #cecfe477), 
+                                linear-gradient(60deg, #cecfe477 25%, transparent 25.5%, transparent 75%, #cecfe477 75%, #cecfe477);
+            /* Background size and position */
+            background-size: 20px 35px;
+            background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+            /* Add any other styles or layout adjustments here */
+            /* For example, you may want to add padding or margin to the body */
+        }
+
+        /* Add additional CSS for other elements of your layout as needed */
+    </style>
+</head>
+<body>
+    {% include 'includes\header.html' %}
+  
+    <main>
+        <!-- Main content (e.g., featured games, about section) -->
+        @@CONTENT@@ <!-- This will be replaced with content from other files -->
+    </main>
+    <footer>
+        <!-- Footer content (e.g., copyright information) -->
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+</body>
+</html>
