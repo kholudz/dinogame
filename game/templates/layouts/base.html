@@ -22,18 +22,62 @@
           
         }
 
-     
+        main {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; 
+        }
+        .content {
+    text-align: center; 
+}
+.button-container {
+    margin-top: 5px; 
+}
+
+      
+        footer {
+            text-align: center;
+            padding: 1px 0;
+            background-color: #ccc; 
+        }
+        h1 {
+            color: black !important; 
+        }
+        .button-container {
+    margin-top: 10px; 
+    display: flex;
+    justify-content: center; 
+}
+        .button {
+        margin: 0 10px;
+        display: block;
+        margin-top: 100px;
+        padding: 10px 20px;
+        background-color: #aa72ce;
+        color: white;
+        text-decoration: none;
+        border-radius: 16px;
+        margin-right: 10px;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
     </style>
 </head>
 <body>
     {% include 'includes\header.html' %}
   
     <main>
-        <!-- Main content ) -->
-        @@CONTENT@@ <!-- This will be replaced with content from other files -->
+        {% block content %}
+   
+        {% endblock %}
     </main>
+    
     <footer>
-        <!-- Footer content (e.g., copyright information) -->
+      
         <p>&copy; 2024 All rights reserved.</p>
     </footer>
 </body>

@@ -10,3 +10,6 @@ def td(request):
     return render(request,'game/TD.html')
 
 
+def nhi(request):
+    return render(request,'game/nhi.html')
+

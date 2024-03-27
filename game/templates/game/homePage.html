@@ -1,1 +1,18 @@
 {% extends "layouts/base.html"%}
+
+
+{%block content%}
+
+<div class="content">
+<div class="heading-container">
+<h1>Let's play</h1>
+</div>
+
+<div class="button-container">
+<a href="{% url 'TD' %}" class="button">truth or dare</a>
+
+<a href="{% url 'nhi' %}" class="button">Never Have I Ever</a>
+</div>
+</div>
+
+{%endblock content%}
