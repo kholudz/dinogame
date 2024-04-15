@@ -1,6 +1,9 @@
 
 {% extends "layouts/base.html"%}
+{% load static %}
+{% block head %}
 
+{% endblock %}
 
 
 {%block content%}
@@ -21,9 +24,7 @@
 <button class="dare-button button">Dare</button>
 </div>
 
-
+<script src="{% static 'td.js' %}"></script>
  </div>
-
- <script src="/env/dinogame/game/static/td.js"></script>
-
 {%endblock content%}
+
