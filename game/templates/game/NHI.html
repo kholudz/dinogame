@@ -1,1 +1,25 @@
 {% extends "layouts/base.html"%}
+{% load static %}
+
+
+{%block content%}
+
+<div class="content">
+<div class="heading-container">
+<h1>Never Have I Ever</h1>
+</div>
+
+
+<div class="display-container">
+    <p class="text">click...</p>
+    </div>
+   
+
+<div class="button-container">
+<button class="never-button button">Never Have I Ever</button>
+</div>
+
+<script src="{% static 'nhi.js' %}"></script>
+ </div>
+ 
+{%endblock content%}

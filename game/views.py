@@ -13,3 +13,7 @@ def td(request):
 def nhi(request):
     return render(request,'game/nhi.html')
 
+
+def about(request):
+    return render(request,'game/about.html')
+
